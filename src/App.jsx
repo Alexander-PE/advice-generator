@@ -17,14 +17,20 @@ function App() {
   }, [])
 
   return (
-    <div className='container'>
-      <h3>ADVICE # {data.id}</h3>
-      <p>"{data.advice}"</p>
-      <img src={separator} alt="" />
-      <button className='icono' onClick={() => fetchApi()}>
-        <img src={iconDice} alt="" />
-      </button>
-    </div>
+    <>
+      <div className='container'>
+        <h3>ADVICE # {data.id}</h3>
+        <p>"{data.advice}"</p>
+        <img src={separator} alt="" />
+        <button className='icono' onClick={() => fetchApi()}>
+          <img src={iconDice} alt="" />
+        </button>
+      </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://www.frontendmentor.io/profile/Alexander-PE">Alexander Perez Encarnacion</a>.
+      </div>
+    </>
   )
 }
 
